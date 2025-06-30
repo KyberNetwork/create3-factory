@@ -8,6 +8,3 @@ fs_permissions = [
     { access = 'read', path = './'},
     { access = 'read-write', path = './deployments' }
 ]
-
-[etherscan]
-mainnet = {key = "${MAINNET_SCAN_API_KEY}", chain = 1}

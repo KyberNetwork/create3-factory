@@ -11,7 +11,7 @@ contract DeployScript is Script {
 
     function run() public returns (CREATE3Factory factory) {
         vm.startBroadcast();
-        factory = new CREATE3Factory{salt: "CREATE3Factory"}();
+        factory = new CREATE3Factory();
         _writeAddress("deployments/create3Factory.json", block.chainid, address(factory));
         vm.stopBroadcast();
     }
